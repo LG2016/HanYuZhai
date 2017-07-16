@@ -1,1 +1,47 @@
-Hello Word
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>涵雨斋</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<script type="text/javascript">
+function aa(){
+    var num = document.getElementById("con").value;
+    if (num=="") {alert("输入不能为空");return;}
+        window.location.href="https://api.flvsp.com/?url="+num;
+}
+</script>
+
+</head>
+
+<body>
+
+  <div class="panel"> 
+  <div class="wrap">
+
+   <form>
+        <input type="text"  id="con"/>
+        <input type="button" value="Sure" onclick="aa()"/>
+    </form>
+
+
+  </div>
+</div>
+
+<div style="text-align:center;clear:both">
+<font size="20" color="green"><i>welclome to HanYuZhai!</i></font><br/><br/><br/>
+第一步：进入主流视频网站<br/>
+第二步：复制视频链接<br/>
+第三步：粘贴链接到下面输入框<br/>
+第四步：点击Sure</br>
+eg:<br/><font color="red">https://v.qq.com/x/cover/2xxul4n2j8y0rxi.html?new=1</font>
+</div>
+</body>
+
+</html>
