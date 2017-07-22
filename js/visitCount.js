@@ -48,4 +48,4 @@ if (!visits)
 else
     visits = parseInt(visits) + 1
 setCookie("counter", visits, now)
-document.write("当前点击次数：" + visits)
+document.write("你目前为止进入涵雨斋次数：" + visits)
