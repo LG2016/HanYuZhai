@@ -8,20 +8,56 @@
   <meta charset="UTF-8">
 
   <title>涵雨斋</title>
-
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.5.0/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/zzsc-demo.css">
+<link rel="stylesheet" type="text/css" href="css/icons.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style type="text/css">
+    body{
+    background:url(image/hyh.jpg) no-repeat ;
+    background-size:100% 100%;
+    overflow:hidden;
+     }
+     #note{
+        position:absolute; left: 65%;top: 14%;
+        color: #fff;
+        font-style: italic
+     }
+     #zan{
+       position:absolute; left: 100%;top: 14%;
+     }
+    </style>
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <script>
+    var imgArray = ['image/hyh.jpg', 'image/hyz.jpg','image/a.jpg','image/b.jpg']
+    var i = -1;
+    setInterval(function () {
+        i++;
+        i %= imgArray.length;
+        document.body.style.backgroundImage = 'url(' + imgArray[i] + ')';
+    }, 900000);
+
+
+</script>
+     <script type="text/javascript" src="js/visitCount.js">
 <script type="text/javascript">
+
+
 function aa(){
     var num = document.getElementById("con").value;
     if (num=="") {alert("输入不能为空");return;}
         window.location.href="https://api.flvsp.com/?url="+num;
+}
+function bb(){
+   alert("谢谢点赞");
 }
 </script>
 
 </head>
 
 <body>
-
+  
   <div class="panel"> 
   <div class="wrap">
 
@@ -33,15 +69,27 @@ function aa(){
 
   </div>
 </div>
+<div class="zan">
+     <ol class="grid">
+    <li class="grid__item">
+        <button class="icobutton icobutton--thumbs-up"><span class="fa fa-thumbs-up"></span></button>
+      </li>
+    </ol>
+<zan>
+ <script src="js/mo.min.js"></script>
+<script src="js/demo.js"></script>
 
-<div style="text-align:center;clear:both">
-<font size="20" color="green"><i>welclome to HanYuZhai!</i></font><br/><br/><br/>
-第一步：进入主流视频网站<br/>
-第二步：复制视频链接<br/>
-第三步：粘贴链接到下面输入框<br/>
-第四步：点击Sure</br>
-eg:<br/><font color="red">https://v.qq.com/x/cover/2xxul4n2j8y0rxi.html?new=1</font>
+
+<div id="note">
+<ul>
+<li>第一步：进入主流视频网站<br/></li>
+<li>第二步：复制视频链接<br/></li>
+<li>第三步：粘贴链接到下面输入框<br/></li>
+<li>第四步：点击Sure</br></li>
+</ul>
 </div>
+
+
 </body>
 
 </html>
