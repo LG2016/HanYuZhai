@@ -29,7 +29,7 @@
      }
     </style>
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-    <script>
+<script type="text/javascript">
     var imgArray = ['image/hyh.jpg', 'image/hyz.jpg','image/a.jpg','image/b.jpg']
     var i = -1;
     setInterval(function () {
@@ -37,20 +37,13 @@
         i %= imgArray.length;
         document.body.style.backgroundImage = 'url(' + imgArray[i] + ')';
     }, 10000);
-
-
 </script>
-     <script type="text/javascript" src="js/visitCount.js">
+<script type="text/javascript" src="js/visitCount.js"></script>
 <script type="text/javascript">
-
-
 function aa(){
     var num = document.getElementById("con").value;
     if (num=="") {alert("输入不能为空");return;}
         window.location.href="https://api.flvsp.com/?url="+num;
-}
-function bb(){
-   alert("谢谢点赞");
 }
 </script>
 
