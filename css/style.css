@@ -1,15 +1,27 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300); 
 .panel{
-  position:absolute; top: 14%;right: 52%;
   width: 600px; 
   height: 140px;
   padding: 50px;
   margin: auto;
   border-radius: 5px;
   text-align: center;
-  background: #D5AC80; 
   box-shadow: 1px 1px 100px rgba(255,255,255,1), inset  1px 1px 60px rgba(255,255,255,.4);
 }
+.one{
+  position:absolute; top: 14%;right: 52%;
+  
+}
+.two{
+  position:absolute; top: 14%;left: 52%;
+}
+.three{
+  position:absolute; top: 64%;right: 52%;
+}
+.four{
+  position:absolute; top: 64%;left: 52%;
+}
+
 .wrap{ 
   position: relative;
   overflow: hidden;

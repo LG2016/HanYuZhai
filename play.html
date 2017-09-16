@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>涵雨斋</title>
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<style>
+    body{background-color: #2D2D2D}
+</style>
+<script type="text/javascript">
+function one(){
+    var num = document.getElementById("con").value;
+    if (num=="") {alert("输入不能为空");return;}
+        window.location.href="http://jx.mihatv.com/miwo1.php?url="+num;
+}
+</script>
+<script type="text/javascript">
+function two(){
+    var num = document.getElementById("con").value;
+    if (num=="") {alert("输入不能为空");return;}
+        window.location.href="https://api.flvsp.com/?url="+num;
+}
+</script>
+<script type="text/javascript">
+function three(){
+    var num = document.getElementById("con").value;
+    if (num=="") {alert("输入不能为空");return;}
+        window.location.href="https://jiexi.071811.cc/jx.php?url="+num;
+}
+</script>
+<script type="text/javascript">
+function four(){
+    var num = document.getElementById("con").value;
+    if (num=="") {alert("输入不能为空");return;}
+        window.location.href="http://aikan-tv.com/?url="+num;
+}
+</script>
+</head>
+
+<body>
+<div id="mydiv" style="height:500px;"></div>
+  <script type="text/javascript">
+    window.onload = function() {
+        //配置
+        var config = {
+            vx: 4,  //小球x轴速度,正为右，负为左
+            vy: 4,  //小球y轴速度
+            height: 2,  //小球高宽，其实为正方形，所以不宜太大
+            width: 2,
+            count: 200,   //点个数
+            color: "121, 162, 185",   //点颜色
+            stroke: "130,255,255",    //线条颜色
+            dist: 6000,   //点吸附距离
+            e_dist: 20000,  //鼠标吸附加速距离
+            max_conn: 10  //点到点最大连接数
+        }
+
+        //调用
+        CanvasParticle(config);
+    }
+  </script>
+<div class="panel one"> 
+  <div class="wrap">
+   <form>
+        <input type="text"  id="con"/>
+        <input type="button" value="Sure" onclick="one()"/>
+    </form>
+  </div>
+</div>
+<div class="panel two"> 
+  <div class="wrap">
+   <form>
+        <input type="text"  id="con"/>
+        <input type="button" value="Sure" onclick="two()"/>
+    </form>
+  </div>
+</div>
+<div class="panel three"> 
+  <div class="wrap">
+   <form>
+        <input type="text"  id="con"/>
+        <input type="button" value="Sure" onclick="three()"/>
+    </form>
+  </div>
+</div>
+<div class="panel four"> 
+  <div class="wrap">
+   <form>
+        <input type="text"  id="con"/>
+        <input type="button" value="Sure" onclick="four()"/>
+    </form>
+  </div>
+</div>
+<script type="text/javascript" src="js/canvas-particle.js"></script>
+<script type="text/javascript" src="js/hyz.js"></script>
+
+</body>
+
+</html>
