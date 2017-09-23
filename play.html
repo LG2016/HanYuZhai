@@ -12,25 +12,37 @@
 </style>
 <script type="text/javascript">
 function one(){
-    var num = document.getElementById("con").value;
+    var num = document.getElementById("one").value;
+    if (num.length==0) {
+      alert("输入不能为空");
+    }
     window.location.href="http://jx.mihatv.com/miwo1.php?url="+num;
 }
 </script>
 <script type="text/javascript">
 function two(){
-    var num = document.getElementById("con").value;
+    var num = document.getElementById("two").value;
+    if (num.length==0) {
+      alert("输入不能为空");
+    }
     window.location.href="https://api.flvsp.com/?url="+num;
 }
 </script>
 <script type="text/javascript">
 function three(){
-    var num = document.getElementById("con").value;
+    var num = document.getElementById("three").value;
+    if (num.length==0) {
+      alert("输入不能为空");
+    }
     window.location.href="https://jiexi.071811.cc/jx.php?url="+num;
 }
 </script>
 <script type="text/javascript">
 function four(){
-    var num = document.getElementById("con").value;
+    var num = document.getElementById("four").value;
+    if (num.length==0) {
+      alert("输入不能为空");
+    }
     window.location.href="http://aikan-tv.com/?url="+num;
 }
 </script>
@@ -61,7 +73,7 @@ function four(){
 <div class="panel one"> 
   <div class="wrap">
    <form>
-        <input type="text"  id="con"/>
+        <input type="text"  id="one"/>
         <input type="button" value="Sure" onclick="one()"/>
     </form>
   </div>
@@ -69,7 +81,7 @@ function four(){
 <div class="panel two"> 
   <div class="wrap">
    <form>
-        <input type="text"  id="con"/>
+        <input type="text"  id="two"/>
         <input type="button" value="Sure" onclick="two()"/>
     </form>
   </div>
@@ -77,7 +89,7 @@ function four(){
 <div class="panel three"> 
   <div class="wrap">
    <form>
-        <input type="text"  id="con"/>
+        <input type="text"  id="three"/>
         <input type="button" value="Sure" onclick="three()"/>
     </form>
   </div>
@@ -85,7 +97,7 @@ function four(){
 <div class="panel four"> 
   <div class="wrap">
    <form>
-        <input type="text"  id="con"/>
+        <input type="text"  id="four"/>
         <input type="button" value="Sure" onclick="four()"/>
     </form>
   </div>
