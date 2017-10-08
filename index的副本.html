@@ -4,8 +4,10 @@
 		<title>涵雨斋</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css/hyh.css">
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
 
@@ -16,7 +18,9 @@
 					<p>再卑微的生活都值得被记录</p>
 				</header>
 				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">For yuhan</a>
+					<!-- <a href="work.html" class="button style2 scrolly-middle">工作</a> -->
+					<a href="#banner" class="button style2 scrolly-middle">生活</a>
+					<!-- <a href="play.html" class="button style2 scrolly-middle">娱乐</a> -->
 				</footer>
 			</section>
 
@@ -27,11 +31,13 @@
 				</header>
 				<p class="content">我知道，一个小小的殷勤，能胜过更伟大但是潜默着的真爱。</p>
 				<p class="author">——沈从文</p>
+				<!-- <footer>
+					<a href="#first" class="button style2 scrolly">Act on this message</a>
+				</footer> -->
 			</section>
 
-		<!-- 内容添加 -->
+		<!-- Feature 1 -->
 		<div id="code">
-
 			<article class="container box style1 right">
 				<a href="http://wx3.sinaimg.cn/mw690/005yfUiply1fjlvylj8aej314h0u010o.jpg" class="image fit"><img src="http://wx3.sinaimg.cn/small/005yfUiply1fjlvylj8aej314h0u010o.jpg" alt="" /></a>
 				<div class="inner">
@@ -43,6 +49,7 @@
 				</div>
 			</article>
 
+		<!-- Feature 2 -->
 			<article class="container box style1 left">
 				<a href="http://ww2.sinaimg.cn/mw690/005yfUipjw8f4da4izgpyj30ig0igta3.jpg" class="image fit"><img src="http://ww1.sinaimg.cn/small/005yfUipjw8f4da4izgpyj30ig0igta3.jpg" alt="" /></a>
 				<div class="inner">
@@ -60,20 +67,69 @@
 				<p>每一个被我看见的瞬间刹那，都被我采下，而采下的每个当时，我都感受到一种美的逼迫，因为每个当时，都稍纵即逝：稍纵，即逝。</p>
 				<p class="author">——《目送》</p>
 				</header>
-				<!-- 图片展示 -->
 				<div id="picture" >
 					<div class="inner gallery">
 						<div class="row 0%">
+							<div class="3u 12u(mobile)">
+								<a href="http://wx3.sinaimg.cn/mw690/005yfUiply1fjlwclqsowj30c80gs76b.jpg" class="image fit">
+									<img src="http://wx3.sinaimg.cn/square/005yfUiply1fjlwclqsowj30c80gs76b.jpg" alt="" title="火车上的初日是艳丽的" />
+								</a>
+							</div>
+							<div class="3u 12u(mobile)">
+								<a href="http://wx3.sinaimg.cn/mw690/005yfUiply1fjlvyjf8olj30np0hsq3n.jpg" class="image fit">
+									<img src="http://wx3.sinaimg.cn/square/005yfUiply1fjlvyjf8olj30np0hsq3n.jpg" alt="" title="雨纷纷旧故里草木深" />
+								</a>
+							</div>
 							<div class="3u 12u(mobile)">
 								<a href="http://wx3.sinaimg.cn/mw690/005yfUiply1fjlvykh4i4j31100ku0wg.jpg" class="image fit">
 									<img src="http://wx1.sinaimg.cn/square/005yfUiply1fjlvykh4i4j31100ku0wg.jpg" alt="" title="一路向北" />
 								</a>
 							</div>
+							<div class="3u 12u(mobile)">
+								<a href="http://wx1.sinaimg.cn/mw690/005yfUiply1fjlvykwj4sj30u014h10h.jpg" class="image fit">
+									<img src="http://wx2.sinaimg.cn/square/005yfUiply1fjlvykwj4sj30u014h10h.jpg" alt="" title="等一朵花开，等一个人来" />
+								</a>
+							</div>
+
 						</div>
 					</div>
 			  </div>
 			</article>
-		<!-- 链接框 -->
+
+		<!-- 	<article class="container box style3">
+					<header>
+					<h2>Nisl sed ultricies</h2>
+					<p>Diam dignissim lectus eu ornare volutpat orci.</p>
+				</header> 
+				<form method="post" action="#">
+					<div class="row 50%">
+						<div class="6u 12u$(mobile)"><input id="min" type="text" class="text" name="name" placeholder="缩影图" /></div>
+						<div class="6u$ 12u$(mobile)"><input id="pic" type="text" class="text" name="email" placeholder="原图" /></div>
+						<div class="des"><input id="des" type="text" class="text" name="name" placeholder="描述" /></div>
+						<div class="12u$">
+							<ul class="actions">
+								<li><input id="addPic" type="submit" value="添加图片" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+				<hr>
+				<form method="post" action="#">
+					<div class="row 50%">
+						<div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="缩影图" /></div>
+						<div class="6u$ 12u$(mobile)"><input type="text" class="text" name="email" placeholder="原图" /></div>
+						<div class="12u$">
+							<textarea name="message" placeholder="留下每一个值得怀恋的心绪……"></textarea>
+						</div>
+						<div class="12u$">
+							<ul class="actions">
+								<li><input type="submit" value="日志记录" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</article> -->
+
 		<section id="footer">
 			<ul class="icons">
 				<li><a href="https://user.qzone.qq.com/2216643277" class="icon fa-qq"><span class="label">Qzone</span></a></li>
@@ -87,11 +143,6 @@
 				</ul>
 			</div>
 		</section>
-		<div class="YSF-BTN-HOLDER">
-			<div class="YSF-CUSTOM-ENTRY-0">
-				<audio src="http://sc1.111ttt.com/2016/5/09/25/202252140262.mp3" controls="controls" loop="loop">灵魂伴侣</audio>	
-			</div>
-		</div>
 			<script src="https://qiyukf.com/script/182960c3eacccace70cde643c2711c9e.js"></script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -99,9 +150,9 @@
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script src="js/hyh.js"></script>
-			<script src="skPlayer/dist/skPlayer.min.js"></script>
 			<script src="js/av-mini-0.6.4.js"></script>
 	</body>
 </html>
